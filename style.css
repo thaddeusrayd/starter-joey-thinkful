@@ -3,9 +3,13 @@
   color: white;
 }
 
+header {
+  margin: 25px;
+}
+
 header h1 {
   text-align: center;
-  font-size: 52;
+  font-size: 52px;
   margin-bottom: 5px;
 }
 
@@ -28,4 +32,18 @@ header nav ul li a {
 
 header nav ul li:last-child a {
   margin-right: 0;
+}
+
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 48px;
+  }
 }
